@@ -3,7 +3,8 @@ import { useEffect, useLayoutEffect, useState } from 'react';
 export default function usePrefersDark() {
   const [prefersDark, setPrefersDark] = useState(false);
 
-  const onChange = ({ matches }: MediaQueryListEvent) => setPrefersDark(matches);
+  const onChange = ({ matches }: MediaQueryListEvent) =>
+    setPrefersDark(matches);
 
   // Shut up console warning by using useEffect on server, but useLayoutEffect on browser
   const useIsomorphicLayoutEffect =

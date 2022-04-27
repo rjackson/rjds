@@ -1,2 +1,2 @@
-export * from "./Anchor"
-export { default } from "./Anchor"
+export * from './Anchor';
+export { default } from './Anchor';

@@ -1,2 +1,2 @@
-export * from "./SingleColumnLayout"
-export { default } from "./SingleColumnLayout"
+export * from './SingleColumnLayout';
+export { default } from './SingleColumnLayout';
