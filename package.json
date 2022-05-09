@@ -20,7 +20,7 @@
     "analyze": "size-limit --why"
   },
   "peerDependencies": {
-    "react": "^17.0.2",
+    "react": "^18.1.0 || ^18.0.2",
     "styled-components": "^5.3.5",
     "tailwindcss": "^3.0.24"
   },
@@ -57,10 +57,10 @@
     "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "postcss": "^8.4.12",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "size-limit": "^7.0.8",
-    "styled-components": "*",
+    "styled-components": "^5.3.5",
     "tailwindcss": "^3.0.24",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
