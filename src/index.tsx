@@ -32,6 +32,12 @@ export * from './components/SingleColumnLayout';
 export { default as UnorderedList } from './components/UnorderedList';
 export * from './components/UnorderedList';
 
+export { default as Input } from './components/Input';
+export * from './components/Input';
+
+export { default as Button } from './components/Button';
+export * from './components/Button';
+
 // Hooks
 export { default as usePrefersDark } from './hooks/usePrefersDark';
 export * from './hooks/usePrefersDark';
