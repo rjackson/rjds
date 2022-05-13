@@ -11,6 +11,12 @@ export * from './components/H2';
 export { default as H3 } from './components/H3';
 export * from './components/H3';
 
+export { default as H4 } from './components/H4';
+export * from './components/H4';
+
+export { default as H5 } from './components/H5';
+export * from './components/H5';
+
 export { default as Header } from './components/Header';
 export * from './components/Header';
 
