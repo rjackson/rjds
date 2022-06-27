@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const H4 = styled.h4.attrs({
   className: `
-    text-md
+    text-base
     font-semibold
     text-center
     text-gray-600

@@ -9,3 +9,8 @@
 - Add H5
 - Add Button
 - Add Input
+
+## 0.4.1
+
+- Fix H4 text size
+  - text-md (invalid class) -> text-base
