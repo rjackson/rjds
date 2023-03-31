@@ -18,3 +18,18 @@
 ## 0.4.2
 
 - Change internal folder structure
+- Replace use of styled-components with basic HTML element wrappers
+  - Fixes an issue where `className` props were typed with a string literal
+  - [ ] Anchor.tsx
+  - [ ] Button.tsx
+  - [ ] DescriptionList.tsx
+  - [ ] H2.tsx
+  - [ ] H3.tsx
+  - [ ] H4.tsx
+  - [ ] H5.tsx
+  - [ ] Header.tsx
+  - [ ] Input.tsx
+  - [ ] Panel.tsx
+  - [ ] Section.tsx
+  - [ ] SingleColumnLayout.tsx
+  - [ ] UnorderedList.tsx
