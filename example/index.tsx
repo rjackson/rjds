@@ -3,6 +3,8 @@ import * as React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
 
 import {
+  Alert,
+  AlertsVariant,
   Anchor,
   Button,
   DescriptionList,
@@ -37,6 +39,11 @@ const App = () => {
       >
         <Section>
           <Panel className="flex flex-col space-y-4">
+            {(['success', 'info', 'warning', 'error'] satisfies AlertsVariant[]).map(variant => (
+              <Alert key={variant} variant={variant}>
+                I am an alert of {variant} proportions
+              </Alert>
+            ))}
             <Anchor href="https://google.com" target="_blank">
               Anchor link
             </Anchor>

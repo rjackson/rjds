@@ -1,4 +1,6 @@
 // Components
+export * from './components/Alert';
+
 export * from './components/Anchor';
 
 export * from './components/DescriptionList';
