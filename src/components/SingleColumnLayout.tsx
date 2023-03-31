@@ -1,18 +1,18 @@
 import * as React from 'react';
 
-interface SingleColumnProps extends React.ComponentPropsWithoutRef<'div'> {
+interface SingleColumnLayoutProps extends React.ComponentPropsWithoutRef<'div'> {
   header: React.ReactNode;
   footer: React.ReactNode;
   children: React.ReactNode;
 }
 
-const SingleColumn = ({
+const SingleColumnLayout = ({
   header,
   footer,
   children,
   className = '',
   ...props
-}: SingleColumnProps) => {
+}: SingleColumnLayoutProps) => {
   return (
     <div
       className={`
@@ -51,5 +51,5 @@ const SingleColumn = ({
   );
 };
 
-export { SingleColumnProps };
-export { SingleColumn };
+export { SingleColumnLayoutProps };
+export { SingleColumnLayout };
