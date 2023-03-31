@@ -1,7 +1,14 @@
-import styled from 'styled-components';
+import React from 'react';
 
-const Header = styled.header.attrs({
-  className: `w-full px-6 py-2 flex flex-col py-4 space-y-4`,
-})``;
+interface HeaderProps extends React.ComponentPropsWithoutRef<'header'> {}
 
-export { Header };
+export const Header = ({ className, children, ...props }: HeaderProps) => {
+  return (
+    <header
+      className={`w-full px-6 py-2 flex flex-col py-4 space-y-4 ${className}`}
+      {...props}
+    >
+      {children}
+    </header>
+  );
+};
