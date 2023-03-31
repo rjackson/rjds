@@ -6,9 +6,9 @@ px-2
 py-1
 rounded
 
+appearance-none
 ring-2
 ring-gray-400
-
 
 focus:outline-none
 focus:ring
