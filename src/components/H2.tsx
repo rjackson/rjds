@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-const H4 = styled.h4.attrs({
+const H2 = styled.h2.attrs({
   className: `
-    text-base
+    text-2xl
     font-semibold
     text-center
     text-gray-600
-    
+
     dark:text-gray-300
   `,
 })``;
 
-export default H4;
+export { H2 };

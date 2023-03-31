@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-const H5 = styled.h5.attrs({
+const H3 = styled.h3.attrs({
   className: `
-    text-sm
+    text-lg
     font-semibold
     text-center
     text-gray-600
@@ -11,4 +11,4 @@ const H5 = styled.h5.attrs({
   `,
 })``;
 
-export default H5;
+export { H3 };

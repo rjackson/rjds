@@ -26,4 +26,4 @@ const DescriptionList = styled.dl.attrs({
 })``;
 
 export { DescriptionListItem, DescriptionListItemProps };
-export default DescriptionList;
+export { DescriptionList };

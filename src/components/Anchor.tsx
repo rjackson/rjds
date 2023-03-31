@@ -25,4 +25,4 @@ const Anchor = styled.a.attrs({
     `,
 })``;
 
-export default Anchor;
+export { Anchor };

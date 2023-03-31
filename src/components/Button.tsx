@@ -34,4 +34,4 @@ const Button = styled.button.attrs({
   className: buttonClasses,
 })``;
 
-export default Button;
+export { Button };

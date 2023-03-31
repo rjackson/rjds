@@ -52,4 +52,4 @@ const SingleColumn = ({
 };
 
 export { SingleColumnProps };
-export default SingleColumn;
+export { SingleColumn };

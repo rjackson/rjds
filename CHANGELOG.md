@@ -14,3 +14,7 @@
 
 - Fix H4 text size
   - text-md (invalid class) -> text-base
+
+## 0.4.2
+
+- Change internal folder structure

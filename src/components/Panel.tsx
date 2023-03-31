@@ -15,4 +15,4 @@ const Panel = styled.div.attrs({
   `,
 })``;
 
-export default Panel;
+export { Panel };

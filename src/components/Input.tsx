@@ -23,4 +23,4 @@ const Input = styled.input.attrs({
   className: inputClasses,
 })``;
 
-export default Input;
+export { Input };
