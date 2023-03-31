@@ -28,7 +28,7 @@
   - [x] H4.tsx
   - [x] H5.tsx
   - [x] Header.tsx
-  - [ ] Input.tsx
+  - [x] Input.tsx
   - [ ] Panel.tsx
   - [ ] Section.tsx
   - [ ] SingleColumnLayout.tsx

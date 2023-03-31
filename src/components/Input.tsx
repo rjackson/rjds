@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import React from 'react';
 
 export const inputClasses = `
 w-full
@@ -19,8 +19,12 @@ dark:ring-gray-500
 dark:bg-gray-900
 `;
 
-const Input = styled.input.attrs({
-  className: inputClasses,
-})``;
+interface InputProps extends React.ComponentPropsWithoutRef<'input'> {}
 
-export { Input };
+export const Input = ({ className, children, ...props }: InputProps) => {
+  return (
+    <input className={`${inputClasses} ${className}`} {...props}>
+      {children}
+    </input>
+  );
+};
