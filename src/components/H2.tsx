@@ -1,14 +1,23 @@
-import styled from 'styled-components';
+import React from 'react';
 
-const H2 = styled.h2.attrs({
-  className: `
-    text-2xl
-    font-semibold
-    text-center
-    text-gray-600
+interface H2Props extends React.ComponentPropsWithoutRef<'h2'> {}
 
-    dark:text-gray-300
-  `,
-})``;
+export const H2 = ({ className, children, ...props }: H2Props) => {
+  return (
+    <h2
+      className={`
+        text-2xl
+        font-semibold
+        text-center
+        text-gray-600
 
-export { H2 };
+        dark:text-gray-300
+      
+        ${className}
+    `}
+      {...props}
+    >
+      {children}
+    </h2>
+  );
+};

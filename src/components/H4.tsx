@@ -1,14 +1,23 @@
-import styled from 'styled-components';
+import React from 'react';
 
-const H4 = styled.h4.attrs({
-  className: `
-    text-base
-    font-semibold
-    text-center
-    text-gray-600
-    
-    dark:text-gray-300
-  `,
-})``;
+interface H4Props extends React.ComponentPropsWithoutRef<'h4'> {}
 
-export { H4 };
+export const H4 = ({ className, children, ...props }: H4Props) => {
+  return (
+    <h4
+      className={`
+        text-base
+        font-semibold
+        text-center
+        text-gray-600
+
+        dark:text-gray-300
+      
+        ${className}
+    `}
+      {...props}
+    >
+      {children}
+    </h4>
+  );
+};

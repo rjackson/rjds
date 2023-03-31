@@ -1,14 +1,23 @@
-import styled from 'styled-components';
+import React from 'react';
 
-const H3 = styled.h3.attrs({
-  className: `
-    text-lg
-    font-semibold
-    text-center
-    text-gray-600
-    
-    dark:text-gray-300
-  `,
-})``;
+interface H3Props extends React.ComponentPropsWithoutRef<'h3'> {}
 
-export { H3 };
+export const H3 = ({ className, children, ...props }: H3Props) => {
+  return (
+    <h3
+      className={`
+        text-lg
+        font-semibold
+        text-center
+        text-gray-600
+
+        dark:text-gray-300
+      
+        ${className}
+    `}
+      {...props}
+    >
+      {children}
+    </h3>
+  );
+};

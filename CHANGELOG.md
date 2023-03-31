@@ -23,10 +23,10 @@
   - [x] Anchor.tsx
   - [x] Button.tsx
   - [x] DescriptionList.tsx
-  - [ ] H2.tsx
-  - [ ] H3.tsx
-  - [ ] H4.tsx
-  - [ ] H5.tsx
+  - [x] H2.tsx
+  - [x] H3.tsx
+  - [x] H4.tsx
+  - [x] H5.tsx
   - [ ] Header.tsx
   - [ ] Input.tsx
   - [ ] Panel.tsx
