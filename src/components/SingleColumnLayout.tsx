@@ -30,7 +30,7 @@ const SingleColumnLayout = ({
 
       dark:text-gray-50
       dark:bg-gray-900
-      ${className}
+      ${className ?? ''}
     `}
       {...props}
     >

@@ -13,7 +13,7 @@ export const H5 = ({ className, children, ...props }: H5Props) => {
 
         dark:text-gray-300
       
-        ${className}
+        ${className ?? ''}
     `}
       {...props}
     >

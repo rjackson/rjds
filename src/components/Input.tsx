@@ -23,7 +23,7 @@ interface InputProps extends React.ComponentPropsWithoutRef<'input'> {}
 
 export const Input = ({ className, children, ...props }: InputProps) => {
   return (
-    <input className={`${inputClasses} ${className}`} {...props}>
+    <input className={`${inputClasses} ${className ?? ''}`} {...props}>
       {children}
     </input>
   );

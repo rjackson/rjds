@@ -13,7 +13,7 @@ export const H4 = ({ className, children, ...props }: H4Props) => {
 
         dark:text-gray-300
       
-        ${className}
+        ${className ?? ''}
     `}
       {...props}
     >

@@ -15,7 +15,7 @@ export const DescriptionListItem = ({
   ...props
 }: DescriptionListItemProps) => {
   return (
-    <div className={`${className}`} {...props}>
+    <div className={className} {...props}>
       <dt className="font-semibold">{titleElement ?? title}</dt>
       <dd>{children}</dd>
     </div>
@@ -30,7 +30,7 @@ export const DescriptionList = ({
   ...props
 }: DescriptionListProps) => {
   return (
-    <dl className={`flex flex-col space-y-4 ${className}`} {...props}>
+    <dl className={`flex flex-col space-y-4 ${className ?? ''}`} {...props}>
       {children}
     </dl>
   );

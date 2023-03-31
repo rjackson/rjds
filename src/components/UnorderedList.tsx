@@ -8,7 +8,7 @@ export const UnorderedList = ({
   ...props
 }: UnorderedListProps) => {
   return (
-    <ul className={`list-disc list-inside pl-3 ${className}`} {...props}>
+    <ul className={`list-disc list-inside pl-3 ${className ?? ''}`} {...props}>
       {children}
     </ul>
   );

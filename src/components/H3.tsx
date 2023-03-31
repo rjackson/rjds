@@ -13,7 +13,7 @@ export const H3 = ({ className, children, ...props }: H3Props) => {
 
         dark:text-gray-300
       
-        ${className}
+        ${className ?? ''}
     `}
       {...props}
     >

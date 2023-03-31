@@ -16,8 +16,8 @@ export const Panel = ({ className, children, ...props }: PanelProps) => {
         dark:bg-gray-800
         dark:border
         dark:border-gray-700
-      ${className}
-    `}
+        ${className ?? ''}
+      `}
       {...props}
     >
       {children}

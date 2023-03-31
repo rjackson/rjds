@@ -27,7 +27,7 @@ interface AnchorProps extends React.ComponentPropsWithoutRef<'a'> {}
 
 export const Anchor = ({ className, children, ...props }: AnchorProps) => {
   return (
-    <a className={`${anchorClasses} ${className}`} {...props}>
+    <a className={`${anchorClasses} ${className ?? ''}`} {...props}>
       {children}
     </a>
   );
