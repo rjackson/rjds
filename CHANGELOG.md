@@ -22,7 +22,7 @@
   - Fixes an issue where `className` props were typed with a string literal
   - [x] Anchor.tsx
   - [x] Button.tsx
-  - [ ] DescriptionList.tsx
+  - [x] DescriptionList.tsx
   - [ ] H2.tsx
   - [ ] H3.tsx
   - [ ] H4.tsx
@@ -33,3 +33,4 @@
   - [ ] Section.tsx
   - [ ] SingleColumnLayout.tsx
   - [ ] UnorderedList.tsx
+- DescriptionListItem: Add `titleElement` prop to pass elements as a title instead of just text

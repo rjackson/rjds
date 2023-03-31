@@ -1,29 +1,37 @@
 import * as React from 'react';
-import styled from 'styled-components';
 
 interface DescriptionListItemProps
   extends React.ComponentPropsWithoutRef<'div'> {
   title: string;
+  titleElement?: JSX.Element;
   children: React.ReactNode;
 }
 
-const DescriptionListItem = ({
+export const DescriptionListItem = ({
   title,
+  titleElement,
   children,
   className = '',
   ...props
 }: DescriptionListItemProps) => {
   return (
     <div className={`${className}`} {...props}>
-      <dt className="font-semibold">{title}</dt>
+      <dt className="font-semibold">{titleElement ?? title}</dt>
       <dd>{children}</dd>
     </div>
   );
 };
 
-const DescriptionList = styled.dl.attrs({
-  className: `flex flex-col space-y-4`,
-})``;
+interface DescriptionListProps extends React.ComponentPropsWithoutRef<'dl'> {}
 
-export { DescriptionListItem, DescriptionListItemProps };
-export { DescriptionList };
+export const DescriptionList = ({
+  className,
+  children,
+  ...props
+}: DescriptionListProps) => {
+  return (
+    <dl className={`flex flex-col space-y-4 ${className}`} {...props}>
+      {children}
+    </dl>
+  );
+};
