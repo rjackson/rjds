@@ -22,3 +22,4 @@
   - Fixes an issue where `className` props were typed with a string literal
 - DescriptionListItem: Add `titleElement` prop to pass elements as a title instead of just text
 - Input: Fix element outline missing on iOS Safari
+- Button: Add primary and secondary variants, using "variant" prop
