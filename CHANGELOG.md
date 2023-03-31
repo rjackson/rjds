@@ -21,7 +21,7 @@
 - Replace use of styled-components with basic HTML element wrappers
   - Fixes an issue where `className` props were typed with a string literal
   - [x] Anchor.tsx
-  - [ ] Button.tsx
+  - [x] Button.tsx
   - [ ] DescriptionList.tsx
   - [ ] H2.tsx
   - [ ] H3.tsx

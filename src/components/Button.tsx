@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import React from 'react';
 
 export const buttonClasses = `
 px-2
@@ -30,8 +30,12 @@ dark:focus:ring-fuchsia-400
 dark:bg-gray-900
 `;
 
-const Button = styled.button.attrs({
-  className: buttonClasses,
-})``;
+interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {}
 
-export { Button };
+export const Button = ({ className, children, ...props }: ButtonProps) => {
+  return (
+    <button className={`${buttonClasses} ${className}`} {...props}>
+      {children}
+    </button>
+  );
+};
