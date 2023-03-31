@@ -9,7 +9,7 @@ Very much a work in progress.
 1. Install the design system, and required peer dependencies:
 
    ```sh
-   npm i @rjackson/rjds react styled-components tailwindcss
+   npm i @rjackson/rjds react tailwindcss
    ```
 
 2. [Install tailwindcss as per their instructions](https://tailwindcss.com/docs/installation), and then update `tailwind.config.js` to:
