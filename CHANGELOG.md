@@ -29,7 +29,7 @@
   - [x] H5.tsx
   - [x] Header.tsx
   - [x] Input.tsx
-  - [ ] Panel.tsx
+  - [x] Panel.tsx
   - [ ] Section.tsx
   - [ ] SingleColumnLayout.tsx
   - [ ] UnorderedList.tsx
