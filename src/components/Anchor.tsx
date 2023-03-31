@@ -1,28 +1,34 @@
-import styled from 'styled-components';
+import React from 'react';
 
-const Anchor = styled.a.attrs({
-  className: `
-    inline-block
-    px-1
-    -mx-1
+export const anchorClasses = `
+  inline-block
+  px-1
+  -mx-1
 
-    cursor-pointer
+  cursor-pointer
 
-    text-indigo-600
-    hover:bg-indigo-100
+  text-indigo-600
+  hover:bg-indigo-100
 
-    focus:outline-none
-    focus:bg-indigo-100
-    focus:ring
-    focus:ring-indigo-500
-    
-    dark:text-fuchsia-400
-    dark:hover:text-fuchsia-300
-    dark:hover:bg-fuchsia-800
-    dark:focus:text-fuchsia-300
-    dark:focus:bg-fuchsia-800
-    dark:focus:ring-fuchsia-400
-    `,
-})``;
+  focus:outline-none
+  focus:bg-indigo-100
+  focus:ring
+  focus:ring-indigo-500
 
-export { Anchor };
+  dark:text-fuchsia-400
+  dark:hover:text-fuchsia-300
+  dark:hover:bg-fuchsia-800
+  dark:focus:text-fuchsia-300
+  dark:focus:bg-fuchsia-800
+  dark:focus:ring-fuchsia-400
+`;
+
+interface AnchorProps extends React.ComponentPropsWithoutRef<'a'> {}
+
+export const Anchor = ({ className, children, ...props }: AnchorProps) => {
+  return (
+    <a className={`${anchorClasses} ${className}`} {...props}>
+      {children}
+    </a>
+  );
+};

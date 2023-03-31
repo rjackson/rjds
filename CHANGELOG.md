@@ -20,7 +20,7 @@
 - Change internal folder structure
 - Replace use of styled-components with basic HTML element wrappers
   - Fixes an issue where `className` props were typed with a string literal
-  - [ ] Anchor.tsx
+  - [x] Anchor.tsx
   - [ ] Button.tsx
   - [ ] DescriptionList.tsx
   - [ ] H2.tsx
