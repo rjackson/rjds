@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useState } from 'react';
 
-function usePrefersDark() {
+export function usePrefersDark() {
   const [prefersDark, setPrefersDark] = useState(false);
 
   const onChange = ({ matches }: MediaQueryListEvent) =>
@@ -36,5 +36,3 @@ function usePrefersDark() {
 
   return prefersDark;
 }
-
-export { usePrefersDark }
