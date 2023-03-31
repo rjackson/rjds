@@ -31,3 +31,11 @@ Very much a work in progress.
        plugins: [],
    };
    ```
+
+## Release management
+
+Use the tool [np](https://github.com/sindresorhus/np) to manage releases.
+
+```sh
+npx np
+```
