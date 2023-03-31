@@ -1,8 +1,8 @@
 import React from 'react';
 
-interface H5Props extends React.ComponentPropsWithoutRef<'h5'> {}
+type H5Props = React.ComponentPropsWithoutRef<'h5'>;
 
-export const H5 = ({ className, children, ...props }: H5Props) => {
+export const H5 = ({ className, children, ...props }: H5Props): JSX.Element => {
   return (
     <h5
       className={`

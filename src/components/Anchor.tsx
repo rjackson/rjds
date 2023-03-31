@@ -23,9 +23,13 @@ export const anchorClasses = `
   dark:focus:ring-fuchsia-500
 `;
 
-interface AnchorProps extends React.ComponentPropsWithoutRef<'a'> {}
+type AnchorProps = React.ComponentPropsWithoutRef<'a'>;
 
-export const Anchor = ({ className, children, ...props }: AnchorProps) => {
+export const Anchor = ({
+  className,
+  children,
+  ...props
+}: AnchorProps): JSX.Element => {
   return (
     <a className={`${anchorClasses} ${className ?? ''}`} {...props}>
       {children}

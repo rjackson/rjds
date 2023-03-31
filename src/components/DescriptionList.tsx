@@ -13,7 +13,7 @@ export const DescriptionListItem = ({
   children,
   className = '',
   ...props
-}: DescriptionListItemProps) => {
+}: DescriptionListItemProps): JSX.Element => {
   return (
     <div className={className} {...props}>
       <dt className="font-semibold">{titleElement ?? title}</dt>
@@ -22,13 +22,13 @@ export const DescriptionListItem = ({
   );
 };
 
-interface DescriptionListProps extends React.ComponentPropsWithoutRef<'dl'> {}
+type DescriptionListProps = React.ComponentPropsWithoutRef<'dl'>;
 
 export const DescriptionList = ({
   className,
   children,
   ...props
-}: DescriptionListProps) => {
+}: DescriptionListProps): JSX.Element => {
   return (
     <dl className={`flex flex-col space-y-4 ${className ?? ''}`} {...props}>
       {children}

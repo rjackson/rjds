@@ -1,8 +1,8 @@
 import React from 'react';
 
-interface H3Props extends React.ComponentPropsWithoutRef<'h3'> {}
+type H3Props = React.ComponentPropsWithoutRef<'h3'>;
 
-export const H3 = ({ className, children, ...props }: H3Props) => {
+export const H3 = ({ className, children, ...props }: H3Props): JSX.Element => {
   return (
     <h3
       className={`

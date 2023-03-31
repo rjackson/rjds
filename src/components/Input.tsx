@@ -19,9 +19,13 @@ dark:ring-gray-500
 dark:bg-gray-900
 `;
 
-interface InputProps extends React.ComponentPropsWithoutRef<'input'> {}
+type InputProps = React.ComponentPropsWithoutRef<'input'>;
 
-export const Input = ({ className, children, ...props }: InputProps) => {
+export const Input = ({
+  className,
+  children,
+  ...props
+}: InputProps): JSX.Element => {
   return (
     <input className={`${inputClasses} ${className ?? ''}`} {...props}>
       {children}

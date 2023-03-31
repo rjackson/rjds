@@ -1,8 +1,8 @@
 import React from 'react';
 
-interface H4Props extends React.ComponentPropsWithoutRef<'h4'> {}
+type H4Props = React.ComponentPropsWithoutRef<'h4'>;
 
-export const H4 = ({ className, children, ...props }: H4Props) => {
+export const H4 = ({ className, children, ...props }: H4Props): JSX.Element => {
   return (
     <h4
       className={`

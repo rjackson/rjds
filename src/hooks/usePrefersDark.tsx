@@ -1,9 +1,9 @@
 import { useEffect, useLayoutEffect, useState } from 'react';
 
-export function usePrefersDark() {
+export function usePrefersDark(): boolean {
   const [prefersDark, setPrefersDark] = useState(false);
 
-  const onChange = ({ matches }: MediaQueryListEvent) =>
+  const onChange = ({ matches }: MediaQueryListEvent): void =>
     setPrefersDark(matches);
 
   // Shut up console warning by using useEffect on server, but useLayoutEffect on browser
@@ -29,7 +29,7 @@ export function usePrefersDark() {
     // And catch if it ever changes
     prefersDarkMediaQuery.addEventListener('change', onChange);
 
-    return () => {
+    return (): void => {
       prefersDarkMediaQuery.removeEventListener('change', onChange);
     };
   }, []);

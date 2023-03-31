@@ -1,8 +1,12 @@
 import React from 'react';
 
-interface PanelProps extends React.ComponentPropsWithoutRef<'div'> {}
+type PanelProps = React.ComponentPropsWithoutRef<'div'>;
 
-export const Panel = ({ className, children, ...props }: PanelProps) => {
+export const Panel = ({
+  className,
+  children,
+  ...props
+}: PanelProps): JSX.Element => {
   return (
     <div
       className={`

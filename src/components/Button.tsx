@@ -2,8 +2,7 @@ import React from 'react';
 
 type ButtonVariants = 'primary' | 'secondary';
 
-interface ButtonProps
-  extends React.ComponentPropsWithoutRef<'button'> {
+interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   variant?: ButtonVariants;
 }
 
@@ -12,10 +11,11 @@ export const Button = ({
   className,
   children,
   ...props
-}: ButtonProps) => {
+}: ButtonProps): JSX.Element => {
   return (
     <button
-      className={`${variantButtonClasses[variant ?? 'secondary']} ${className ?? ''}`}
+      className={`${variantButtonClasses[variant ?? 'secondary']} ${className ??
+        ''}`}
       {...props}
     >
       {children}

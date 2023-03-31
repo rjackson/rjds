@@ -11,7 +11,7 @@ export const Alert = ({
   className,
   children,
   ...props
-}: AlertProps) => {
+}: AlertProps): JSX.Element => {
   return (
     <div
       className={`${variantAlertClasses[variant ?? 'info']} ${className ?? ''}`}
