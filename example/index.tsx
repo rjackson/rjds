@@ -15,6 +15,7 @@ import {
   H5,
   Header,
   Input,
+  Select,
   Panel,
   Section,
   SingleColumnLayout,
@@ -77,6 +78,12 @@ const App = () => {
             <H4>H4 Heading</H4>
             <H5>H5 Heading</H5>
             <Input placeholder="Input element" />
+            <Select>
+              <option value="">Option 1</option>
+              <option value="1">Option 2</option>
+              <option value="2">Option 3</option>
+              <option value="3">Option 4</option>
+            </Select>
             <UnorderedList>
               <li>One list item</li>
               <li>Two list items</li>

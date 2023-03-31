@@ -24,3 +24,4 @@
 - Input: Fix element outline missing on iOS Safari
 - Button: Add primary and secondary variants, using "variant" prop
 - Add Alert component
+- Add Select component
