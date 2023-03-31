@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 export const inputClasses = `
 w-full
@@ -21,14 +21,16 @@ dark:bg-gray-900
 
 type InputProps = React.ComponentPropsWithoutRef<'input'>;
 
-export const Input = ({
-  className,
-  children,
-  ...props
-}: InputProps): JSX.Element => {
-  return (
-    <input className={`${inputClasses} ${className ?? ''}`} {...props}>
-      {children}
-    </input>
-  );
-};
+export const Input = forwardRef<HTMLInputElement, InputProps>(
+  ({ className, children, ...props }, ref): JSX.Element => {
+    return (
+      <input
+        ref={ref}
+        className={`${inputClasses} ${className ?? ''}`}
+        {...props}
+      >
+        {children}
+      </input>
+    );
+  }
+);

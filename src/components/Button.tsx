@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 type ButtonVariants = 'primary' | 'secondary';
 
@@ -6,22 +6,21 @@ interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   variant?: ButtonVariants;
 }
 
-export const Button = ({
-  variant,
-  className,
-  children,
-  ...props
-}: ButtonProps): JSX.Element => {
-  return (
-    <button
-      className={`${variantButtonClasses[variant ?? 'secondary']} ${className ??
-        ''}`}
-      {...props}
-    >
-      {children}
-    </button>
-  );
-};
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ variant, className, children, ...props }, ref): JSX.Element => {
+    return (
+      <button
+        ref={ref}
+        className={`${
+          variantButtonClasses[variant ?? 'secondary']
+        } ${className ?? ''}`}
+        {...props}
+      >
+        {children}
+      </button>
+    );
+  }
+);
 
 const baseButtonClasses = `
 px-2

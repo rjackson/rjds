@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 export const anchorClasses = `
   inline-block
@@ -25,14 +25,12 @@ export const anchorClasses = `
 
 type AnchorProps = React.ComponentPropsWithoutRef<'a'>;
 
-export const Anchor = ({
-  className,
-  children,
-  ...props
-}: AnchorProps): JSX.Element => {
-  return (
-    <a className={`${anchorClasses} ${className ?? ''}`} {...props}>
-      {children}
-    </a>
-  );
-};
+export const Anchor = forwardRef<HTMLAnchorElement, AnchorProps>(
+  ({ className, children, ...props }, ref): JSX.Element => {
+    return (
+      <a ref={ref} className={`${anchorClasses} ${className ?? ''}`} {...props}>
+        {children}
+      </a>
+    );
+  }
+);
