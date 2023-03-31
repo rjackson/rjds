@@ -1,7 +1,11 @@
-import styled from 'styled-components';
+import React from 'react';
 
-const Section = styled.section.attrs({
-  className: `w-full px-6 py-2`,
-})``;
+interface SectionProps extends React.ComponentPropsWithoutRef<'section'> {}
 
-export { Section };
+export const Section = ({ className, children, ...props }: SectionProps) => {
+  return (
+    <section className={`w-full px-6 py-2 ${className}`} {...props}>
+      {children}
+    </section>
+  );
+};

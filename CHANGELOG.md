@@ -30,7 +30,7 @@
   - [x] Header.tsx
   - [x] Input.tsx
   - [x] Panel.tsx
-  - [ ] Section.tsx
+  - [x] Section.tsx
   - [ ] SingleColumnLayout.tsx
   - [ ] UnorderedList.tsx
 - DescriptionListItem: Add `titleElement` prop to pass elements as a title instead of just text
