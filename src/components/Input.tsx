@@ -14,7 +14,7 @@ focus:outline-none
 focus:ring
 focus:ring-indigo-500
 
-dark:focus:ring-fuchsia-400
+dark:focus:ring-fuchsia-500
 dark:ring-gray-500
 dark:bg-gray-900
 `;

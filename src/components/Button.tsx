@@ -47,8 +47,8 @@ const variantButtonClasses: Record<ButtonVariants, string> = {
     focus:outline-none
     focus:border-white
 
-    dark:bg-fuchsia-400
-    dark:ring-fuchsia-400
+    dark:bg-fuchsia-500
+    dark:ring-fuchsia-500
 
     dark:hover:border-gray-900
     dark:focus:border-gray-900
@@ -70,12 +70,12 @@ const variantButtonClasses: Record<ButtonVariants, string> = {
     focus:bg-indigo-500
     focus:text-white
 
-    dark:hover:bg-fuchsia-400
+    dark:hover:bg-fuchsia-500
     dark:hover:border-gray-900
-    dark:hover:ring-fuchsia-400
-    dark:focus:bg-fuchsia-400
+    dark:hover:ring-fuchsia-500
+    dark:focus:bg-fuchsia-500
     dark:focus:border-gray-900
-    dark:focus:ring-fuchsia-400
+    dark:focus:ring-fuchsia-500
     dark:bg-gray-900
     `,
 };

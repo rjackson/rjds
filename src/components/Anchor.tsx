@@ -15,12 +15,12 @@ export const anchorClasses = `
   focus:ring
   focus:ring-indigo-500
 
-  dark:text-fuchsia-400
+  dark:text-fuchsia-300
   dark:hover:text-fuchsia-300
   dark:hover:bg-fuchsia-800
   dark:focus:text-fuchsia-300
   dark:focus:bg-fuchsia-800
-  dark:focus:ring-fuchsia-400
+  dark:focus:ring-fuchsia-500
 `;
 
 interface AnchorProps extends React.ComponentPropsWithoutRef<'a'> {}

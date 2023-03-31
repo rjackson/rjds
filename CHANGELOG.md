@@ -17,7 +17,7 @@
 
 ## 0.5.0
 
-- Change internal folder structure
+- Improved text and background contrast ratios in dark mode styling
 - Replace use of styled-components with basic HTML element wrappers
   - Fixes an issue where `className` props were typed with a string literal
 - DescriptionListItem: Add `titleElement` prop to pass elements as a title instead of just text
