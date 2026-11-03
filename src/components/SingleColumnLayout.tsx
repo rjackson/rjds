@@ -52,5 +52,5 @@ const SingleColumnLayout = ({
   );
 };
 
-export { SingleColumnLayoutProps };
+export type { SingleColumnLayoutProps };
 export { SingleColumnLayout };
