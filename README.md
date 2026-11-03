@@ -27,6 +27,25 @@ Very much a work in progress.
 
 Versions before 0.6.0 support Tailwind CSS v3; see their READMEs for setup.
 
+## Development
+
+```sh
+npm install
+npm test            # Vitest
+npm run lint
+npm run type-check
+npm run build       # compiles src/ to dist/
+npm run size        # checks the bundle against its size limit
+```
+
+`example/` is a playground app showing every component:
+
+```sh
+cd example
+npm install
+npm run dev         # add ?dark to the URL to start in dark mode
+```
+
 ## Release management
 
 Use the tool [np](https://github.com/sindresorhus/np) to manage releases.
