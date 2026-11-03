@@ -15,7 +15,7 @@ export const Panel = ({
         px-4
 
         rounded-md
-        shadow
+        shadow-sm
         bg-white
 
         dark:bg-gray-800

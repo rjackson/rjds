@@ -41,7 +41,7 @@ const SingleColumnLayout = ({
         flex
         flex-col
         w-full
-        max-w-screen-md
+        max-w-3xl
         space-y-2
       `}
       >

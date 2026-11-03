@@ -5,14 +5,14 @@ export const inputClasses = `
 w-full
 px-2
 py-1
-rounded
+rounded-sm
 
 appearance-none
 ring-2
 ring-gray-400
 
-focus:outline-none
-focus:ring
+focus:outline-hidden
+focus:ring-3
 focus:ring-indigo-500
 
 dark:focus:ring-fuchsia-500

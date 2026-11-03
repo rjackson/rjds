@@ -6,31 +6,26 @@ Very much a work in progress.
 
 ## Installation
 
-1. Install the design system, and required peer dependencies:
+1. Install the design system, and its peer dependencies (React 18 or 19, and Tailwind CSS v4):
 
    ```sh
-   npm i @rjackson/rjds react tailwindcss
+   npm i @rjackson/rjds react react-dom tailwindcss
    ```
 
-2. [Install tailwindcss as per their instructions](https://tailwindcss.com/docs/installation), and then update `tailwind.config.js` to:
+2. [Set up Tailwind CSS](https://tailwindcss.com/docs/installation), then in your main stylesheet:
 
-   1. Scan `@rjackson/rjds` components for class names to compile
+   1. Scan `@rjackson/rjds` for class names to compile (adjust the path relative to the stylesheet)
+   2. Manage dark mode with a `dark` class on an ancestor element
 
-   2. Manage dark-mode via classes
+   ```css
+   @import 'tailwindcss';
 
-   ```diff
-   module.exports = {
-       content: [
-           './src/**/*.{js,jsx,ts,tsx,vue}',
-   +        "./node_modules/@rjackson/rjds/src/**/*.{js,ts,jsx,tsx}",
-       ],
-   +    darkMode: 'class',
-       theme: {
-           extend: {},
-       },
-       plugins: [],
-   };
+   @source '../node_modules/@rjackson/rjds';
+
+   @custom-variant dark (&:where(.dark, .dark *));
    ```
+
+Versions before 0.6.0 support Tailwind CSS v3; see their READMEs for setup.
 
 ## Release management
 

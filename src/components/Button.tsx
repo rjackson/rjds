@@ -26,7 +26,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 const baseButtonClasses = `
 px-2
 py-1
-rounded
+cursor-pointer
+rounded-sm
 
 ring-2
 ring-gray-400
@@ -44,7 +45,7 @@ const variantButtonClasses: Record<ButtonVariants, string> = {
 
     hover:border-white
 
-    focus:outline-none
+    focus:outline-hidden
     focus:border-white
 
     dark:bg-fuchsia-500
@@ -64,7 +65,7 @@ const variantButtonClasses: Record<ButtonVariants, string> = {
     hover:bg-indigo-500
     hover:text-white
 
-    focus:outline-none
+    focus:outline-hidden
     focus:ring-indigo-500
     focus:border-white
     focus:bg-indigo-500

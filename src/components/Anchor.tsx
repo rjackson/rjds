@@ -11,9 +11,9 @@ export const anchorClasses = `
   text-indigo-600
   hover:bg-indigo-100
 
-  focus:outline-none
+  focus:outline-hidden
   focus:bg-indigo-100
-  focus:ring
+  focus:ring-3
   focus:ring-indigo-500
 
   dark:text-fuchsia-300
