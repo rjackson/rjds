@@ -1,10 +1,10 @@
-import 'react-app-polyfill/ie11';
-import * as React from 'react';
-import * as ReactDOMClient from 'react-dom/client';
+import { useState } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
 
 import {
   Alert,
-  AlertsVariant,
+  type AlertsVariant,
   Anchor,
   Button,
   DescriptionList,
@@ -20,10 +20,12 @@ import {
   Section,
   SingleColumnLayout,
   UnorderedList,
-} from '../.';
+} from '../src';
 
 const App = () => {
-  const [darkMode, setDarkMode] = React.useState(false);
+  const [darkMode, setDarkMode] = useState(
+    new URLSearchParams(location.search).has('dark')
+  );
   return (
     <div className={darkMode ? 'dark' : ''}>
       <SingleColumnLayout
@@ -40,7 +42,9 @@ const App = () => {
       >
         <Section>
           <Panel className="flex flex-col space-y-4">
-            {(['success', 'info', 'warning', 'error'] satisfies AlertsVariant[]).map(variant => (
+            {(
+              ['success', 'info', 'warning', 'error'] satisfies AlertsVariant[]
+            ).map((variant) => (
               <Alert key={variant} variant={variant}>
                 I am an alert of {variant} proportions
               </Alert>
@@ -48,18 +52,18 @@ const App = () => {
             <Anchor href="https://google.com" target="_blank">
               Anchor link
             </Anchor>
-            <Button onClick={() => setDarkMode(current => !current)}>
+            <Button onClick={() => setDarkMode((current) => !current)}>
               Button (no variant specified)
             </Button>
             <Button
               variant="primary"
-              onClick={() => setDarkMode(current => !current)}
+              onClick={() => setDarkMode((current) => !current)}
             >
               Button (primary)
             </Button>
             <Button
               variant="secondary"
-              onClick={() => setDarkMode(current => !current)}
+              onClick={() => setDarkMode((current) => !current)}
             >
               Button (secondary)
             </Button>
@@ -68,6 +72,7 @@ const App = () => {
                 How good is that?
               </DescriptionListItem>
               <DescriptionListItem
+                title="An entry with a title element"
                 titleElement={<strong>An entry with a title element</strong>}
               >
                 How good is that?
@@ -97,8 +102,6 @@ const App = () => {
   );
 };
 
-const container = document.getElementById('root');
-
-const root = ReactDOMClient.createRoot(container);
-
+// Start in dark mode with ?dark, for screenshots
+const root = createRoot(document.getElementById('root')!);
 root.render(<App />);

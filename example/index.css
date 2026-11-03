@@ -1,3 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+/* Scan the design system's source for class names. Consumers point this at node_modules/@rjackson/rjds instead */
+@source '../src';
+
+/* Dark mode via a .dark class on an ancestor, as rjds expects */
+@custom-variant dark (&:where(.dark, .dark *));
