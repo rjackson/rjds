@@ -78,3 +78,5 @@ const variantButtonClasses: Record<ButtonVariants, string> = {
     dark:bg-gray-900
     `,
 };
+
+Button.displayName = 'Button';

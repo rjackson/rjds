@@ -1,7 +1,6 @@
 import * as React from 'react';
 
-interface DescriptionListItemProps
-  extends React.ComponentPropsWithoutRef<'div'> {
+interface DescriptionListItemProps extends React.ComponentPropsWithoutRef<'div'> {
   title: string;
   titleElement?: JSX.Element;
   children: React.ReactNode;

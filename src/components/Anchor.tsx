@@ -34,3 +34,5 @@ export const Anchor = forwardRef<HTMLAnchorElement, AnchorProps>(
     );
   }
 );
+
+Anchor.displayName = 'Anchor';

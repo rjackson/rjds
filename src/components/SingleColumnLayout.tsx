@@ -1,7 +1,6 @@
 import * as React from 'react';
 
-interface SingleColumnLayoutProps
-  extends React.ComponentPropsWithoutRef<'div'> {
+interface SingleColumnLayoutProps extends React.ComponentPropsWithoutRef<'div'> {
   header: React.ReactNode;
   footer: React.ReactNode;
   children: React.ReactNode;

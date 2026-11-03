@@ -9,8 +9,9 @@ export const Header = ({
 }: HeaderProps): JSX.Element => {
   return (
     <header
-      className={`w-full px-6 py-2 flex flex-col py-4 space-y-4 ${className ??
-        ''}`}
+      className={`w-full px-6 py-2 flex flex-col py-4 space-y-4 ${
+        className ?? ''
+      }`}
       {...props}
     >
       {children}
