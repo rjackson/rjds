@@ -1,4 +1,5 @@
-import React, { forwardRef } from 'react';
+import { forwardRef, type JSX } from 'react';
+import type * as React from 'react';
 
 type ButtonVariants = 'primary' | 'secondary';
 

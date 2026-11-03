@@ -1,4 +1,5 @@
-import React from 'react';
+import type * as React from 'react';
+import type { JSX } from 'react';
 
 type SectionProps = React.ComponentPropsWithoutRef<'section'>;
 type MainProps = React.ComponentPropsWithoutRef<'main'>;

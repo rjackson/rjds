@@ -1,4 +1,5 @@
-import * as React from 'react';
+import type * as React from 'react';
+import type { JSX } from 'react';
 
 interface DescriptionListItemProps extends React.ComponentPropsWithoutRef<'div'> {
   title: string;

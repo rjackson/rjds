@@ -1,4 +1,5 @@
-import React from 'react';
+import type * as React from 'react';
+import type { JSX } from 'react';
 
 type H5Props = React.ComponentPropsWithoutRef<'h5'>;
 
