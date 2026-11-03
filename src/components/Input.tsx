@@ -22,15 +22,13 @@ dark:bg-gray-900
 type InputProps = React.ComponentPropsWithoutRef<'input'>;
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ className, children, ...props }, ref): JSX.Element => {
+  ({ className, ...props }, ref): JSX.Element => {
     return (
       <input
         ref={ref}
         className={`${inputClasses} ${className ?? ''}`}
         {...props}
-      >
-        {children}
-      </input>
+      />
     );
   }
 );
